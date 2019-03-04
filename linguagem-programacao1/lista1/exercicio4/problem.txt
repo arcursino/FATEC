@@ -1,0 +1,1 @@
+Dados um inteiro x e um inteiro não-negativo n, calcular x elevado a n.
