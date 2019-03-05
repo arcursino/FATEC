@@ -1,0 +1,3 @@
+Dados o número n de alunos de uma turma e suas notas da primeira prova,
+determinar a maior e a menor nota obtidas por essa turma (Nota máxima = 10
+e nota mínima = 0), não permitindo que sejam digitadas notas inválidas.
