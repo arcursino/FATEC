@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main () {
-	float notas [4][4] = {0};
-	float media [4] = {0};
+	float notas [4][4] = {};
+	float media [4] = {};
 	float mediaAlunos = 0;
 
 	//printf("Digite a nota dos aluno1:\n");
@@ -16,6 +16,6 @@ int main () {
         media[i] = mediaAlunos / 4;
 		mediaAlunos = 0;
 	}
-	for (int i = 1; i < 5; i++)
-	printf("A média do aluno(%d) é %.2f\n", i, media[i]);
+	for (int i = 0; i < 4; i++)
+	printf("A média do aluno(%d) é %.2f\n", i + 1, media[i]);
 }
