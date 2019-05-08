@@ -1,0 +1,4 @@
+
+encontre a fórmula de recorrência e implemente
+as duas versões: sem fórmula de recorrência e com uso da fórmula de
+recorrência.
