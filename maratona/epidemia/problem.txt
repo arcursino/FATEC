@@ -1,0 +1,29 @@
+Após um intenso período de chuvas, com um prolongado alagamento de diversas
+regiões, a cidade de Pindaíba está na iminência
+de uma forte epidemia que provavelmente atacará a população exposta aos
+efeitos da água parada. A prevenção dessa catástrofe
+sanitária é a imunização da população por meio de uma dose única de um coquetel
+de 3 remédios, distribuídos regularmente
+pelo governo ao serviço de saúde do município. Um levantamento está sendo feito
+nos estoques de remédios da cidade, visando
+determinar a quantidade de pessoas que poderão ser atendidas em um primeiro
+momento com o que já se encontra disponível
+no sistema público municipal. Funcionários fizeram a contagem das doses
+disponíveis dos 3 medicamentos necessários (que por
+simplicidade chamaremos aqui de medicamentos A, B e C) e agora é possível
+determinar quantas pessoas podem ser imunizadas.
+Uma pessoa não pode receber apenas uma parte do coquetel, pois não ficaria
+imunizada e além disso incorreria em riscos de saúde
+desnecessários. Então, ou a pessoa recebe uma dose do medicamento A, outra
+do B e outra ainda do C, ou não recebe nada. Sua
+tarefa neste problema é, dada as quantidades disponíveis dos medicamentos
+A, B e C, determinar a quantidade de pessoas que
+poderá ser imunizada com eles.
+Entrada
+A entrada é composta por um único caso de teste, expresso em uma linha contendo
+os inteiros A, B e C (0 6 A, B, C 6 30000),
+que representam as quantidades de doses disponíveis de cada medicamento.
+Saída
+O programa deve imprimir um inteiro indicando a quantidade de pessoas que
+poderão ser imunizadas com os medicamentos disponíveis em Pindaíba. Finalize
+com uma quebra de linha
