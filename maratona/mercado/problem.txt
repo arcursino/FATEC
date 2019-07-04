@@ -1,0 +1,14 @@
+Uma companhia financeira está realizando um estudo dos piores investimentos
+realizados e gostaria de adquirir um programa que realizasse este estudo.
+O programa deve ser capaz de analisar a série histórica de valores das ações de
+uma certa companhia e calcular a maior perda que seria a diferença dos valores
+entre uma data T0 e Tn. Se não há perdas, a perda será 0.
+Caso tenha alguma dúvida, a imagem abaixo apresenta o primeiro exemplo de
+entrada.
+
+Entrada:
+Na primeira linha N (número de valores das ações) 0 < N < 100000. Na segunda
+linha o valor das ações na ordem em que foram lançadas. Os valores são sempre
+inteiros v (0 < v < 2 31).
+Saída:
+A perda máxima, expressa em um número negativo se há perda e 0 caso não haja.
