@@ -1,0 +1,17 @@
+1 - [SO] Menor inteiro positivo
+Dado um inteiro N, e um array de números inteiros (em qualquer ordem),
+escreva um código que procura e imprime o menor inteiro positivo que não está
+no array.
+
+
+
+Entrada
+
+A entrada contém um caso de teste. A primeira linha da entrada contém um número
+inteiro N, indicando o tamanho do Array. Seguem-se N linhas, cada uma contendo
+um valor do array.
+
+Saída
+
+A saída deve conter apenas um número, que representa o menor inteiro positivo
+ que não está presente no array, seguido de um caractere de final de linha ("\n").

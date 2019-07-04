@@ -1,0 +1,19 @@
+2 - [SO] Anagrama
+Dadas duas strings, escreva um código que imprime se a primeira é um anagrama
+ segunda. Um anagrama é um rearranjo das letras da string original, produzindo
+  uma nova string que tem o mesmo número de ocorrências de cada uma das letras
+  da string original.
+
+
+
+Entrada
+
+A entrada contém um caso de teste. A primeira linha da entrada contém a
+ primeira palavra, e a segunda linha contém a segunda palavra. Cada palavra
+ contém até 100 caracteres.
+
+Saída
+
+A saída deve conter apenas uma palavra: true caso a primeira palavra seja um
+anagrama da segunda, ou false se não for. Apresente também um caractere de
+final de linha ("\n") após o resultado.
