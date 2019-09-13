@@ -1,0 +1,65 @@
+Implement a function that swaps a 32-bit integer byte-wise
+
+uint32_t byte_swap(uint32_t input)
+{
+
+}
+
+
+
+123456789
++
+111111111
+=
+output
+
+
+>>>>>>> <<<<<<<
+123456789123456789123456789123456789123456789123456789123456789123456789 + 12345678912345678912345678912345678912345678912345678912345
+
+123456789
++
+123456789
+=246913578
+
+a = [:-1] + [:-1]
+n = 1000
+
+for (i = 0; i < n; i++) {
+    
+    
+}
+    
+string getSum(string a, string b) {
+    
+    
+}
+
+a = input()
+b = input()
+sum = a + b  // ?????
+
+
+
+
+===============
+Given a long string, write a method that returns true if the string is a valid number or false otherwise. Only integers and decimals should be considered as valid. In other words, only characters allowed are digits, "-" and ".". The string can be very long (think millions of characters) and no built-in function/class can handle it without overflowing or losing precision.
+
+Some example strings and expected output:
+
+| Input  | Output 
+| -----  | ----- 
+| "13"   | TRUE
+| "3.0"   | TRUE
+| "-7.4"   | TRUE
+| "-13.5"   | TRUE
+| "abc"   | FALSE
+| "123a" | FALSE
+| "-."   | FALSE
+| "-..---.-..-.-" | FALSE
+| "1.0.0.1"   | FALSE
+
+
+a = int(input())
+b = input()
+
