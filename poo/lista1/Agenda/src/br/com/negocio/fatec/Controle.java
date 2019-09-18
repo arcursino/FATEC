@@ -1,19 +1,13 @@
 package br.com.negocio.fatec;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Scanner;
 
 import br.com.modelo.fatec.Agenda;
-import br.com.modelo.fatec.Contato;
 
 public class Controle {
 	public Scanner scanner;

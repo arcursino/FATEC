@@ -1,0 +1,6 @@
+01. Escreva um programa principal que:
+a) Leia 20 números (vetor de inteiros ) a partir de valores digitados pelo usuário, 
+apenas armazene no vetor os números pares; Obs: não deixar posições vazias entre os
+elementos do vetor.
+b) Imprima na tela a quantidade de valores armazenados no vetor(item a), o maior 
+valor encontrado e também a média desses valores.

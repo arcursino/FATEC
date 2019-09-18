@@ -2,6 +2,7 @@ package br.com.modelo.fatec;
 
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class Nome implements Serializable{
 	protected String nome;
 
