@@ -12,15 +12,6 @@ def inserção(v):
    v[i + 1] = x
  return v
 
-
-def seleção(v):
-  resp = []
-  while v:
-    m = min(v)
-    resp.append(m)
-    v.remove(m)
-  return resp
-
 def merge(e, d):
     r = []
     i, j = 0, 0
@@ -83,12 +74,12 @@ def printNaTela(listaTempoGasto, contadorPartes):
     qtdElementos = 5000
 
     print('|--------------------------------------[EP1 - Vale a pena ordenar?]------------------------------------------------------|')
-    print('| Algoritimo escolhido: Todos                                        Duração dos testes:                                 |')
+    print('| Algortimo escolhido: Todos                                         Duração dos testes:                                 |')
     print('| Nomes: Caroline F Nunes e Ariana Cursino    - FATEC                                                                    |')
     print('|------------------------------------------------------------------------------------------------------------------------|')
     print('|                          Tempo de Ordenação                                        Tempo de Busca                      |')
     print('|------------------------------------------------------------------------------------------------------------------------|')
-    print('|   n   |    Inserção    Seleção     Merge.    Quick.    Nativo   |           Binário                 Sequencial         |')
+    print('|   n   |   Inserção   Seleção    Merge   Quick    Nativo   |  Inserção    Seleção     Merge     Quick     Nativo        |')
     print('|------------------------------------------------------------------------------------------------------------------------|')
     for x in range(len(listaNova)):
         print(qtdElementos,"|", listaNova[x], "                                                                                     |")
@@ -100,34 +91,38 @@ def main():
     rangeList = 5000
     listaTempoGasto = []
     contadorPartes = 0
+    
     while(rangeList <= 25000):
-        rangeList += 5000
-
-
-        v = list(range(rangeList))
+        v = list(range(rangeList))        
         shuffle(v)
 
+        t = time.time()
+        inserção(list(v))
+        listaTempoGasto.append(round(time.time() - t,2)) 
 
         t = time.time()
-        mergesort(v)
+        selectionSort(list(v))
+        listaTempoGasto.append(round(time.time() - t,2))
+
+        t = time.time()
+        mergesort(list(v))
         listaTempoGasto.append(round(time.time() - t,2)) 
         
         t = time.time()
-        quicksort(v)
+        quicksort(list(v))
         listaTempoGasto.append(round(time.time() - t,2))
         
         t = time.time()
-        selectionSort(v)
-        listaTempoGasto.append(round(time.time() - t,2))
-
-        t = time.time()
-        sorted(v)
+        sorted(list(v))
         listaTempoGasto.append(round(time.time() - t,2))
 
         contadorPartes += 1
+        rangeList += 5000
     printNaTela(listaTempoGasto, contadorPartes)
 
 main()
 
+# tenho que fazer o busca sequencial de um elemento fora do while e fazer do mesmo elemento dentro do while, depois de ordenar e comparar... para ver se compensa.
+# usar o tempo ou até 30 segundos.
 
     

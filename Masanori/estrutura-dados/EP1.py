@@ -3,7 +3,7 @@ from heapq import heappush, heappop
 from random import sample, shuffle
 
 def print_tabela():
-    print(inserção, mergesort, quicksort, heapsort)
+    print(seleção, inserção, mergesort, quicksort)
 
 
 def inserção(v):
@@ -86,42 +86,21 @@ def quicksort(lista):
     
 
 
-def heapsort():
-    inicio = time.time()
+vsorte_nativo = vsn.sort_nativo
 
-    h = [] 
-
-    for x in v:
-        heappush(h, x)
-    return [heappop(h) for i in range(len(h))]
-
-    v = sample(range(10), 10)
-    print (v)
-    v = heapsort(v)
-    print (v)
-    
-    fim = time.time()
-    print(fim - inicio)
-
-#def sort_nativo():    
- #   inicio = time.time()
-  #  funcao()
-   # fim = time.time()
-    #print(fim - inicio)
-
-def main(inserção, seleção, mergesort, quicksort, heapsort):
+def main(inserção, seleção, mergesort, quicksort):
     for i in range(5000, 25000, 5000):
         
         inserção(i)
         seleção(i)
         mergesort(i)
         quicksort(i)
-        heapsort(i)
+       
         #sort_nativo(i)
 
     print_tabela()
 
-main(inserção, seleção, mergesort, quicksort, heapsort)
+main()
 
 
 
