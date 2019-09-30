@@ -61,6 +61,22 @@ def busca_sequencial(x, v):
             return i
     return -1
 
+cont = 0
+def busca_binaria(x, v):
+  global cont
+  e = -1
+  d = len(v)
+  while e < d-1:
+    m = (e + d) // 2
+    cont = cont + 1
+    if v[m] < x:
+      e = m
+    else:
+      d = m
+  return d
+
+v = list(range(1000000))
+from random import randint
 
 
 def split_list(lista, qtdPartes):
@@ -91,6 +107,11 @@ def main():
     rangeList = 5000
     listaTempoGasto = []
     contadorPartes = 0
+
+    t = time.time()
+    v = list(range(rangeList))
+    busca_sequencial(345,(v))
+    listaTempoGasto.append(round(time.time() - t,2))
     
     while(rangeList <= 25000):
         v = list(range(rangeList))        
@@ -118,11 +139,19 @@ def main():
 
         contadorPartes += 1
         rangeList += 5000
+
+        t = time.time()
+        busca_binaria(2345,(v))
+        listaTempoGasto.append(round(time.time() - t,2))   
+
     printNaTela(listaTempoGasto, contadorPartes)
 
 main()
 
-# tenho que fazer o busca sequencial de um elemento fora do while e fazer do mesmo elemento dentro do while, depois de ordenar e comparar... para ver se compensa.
-# usar o tempo ou até 30 segundos.
+# tenho que fazer o busca sequencial de um elemento fora do while e fazer do mesmo elemento dentro do while, depois de ordenar e comparar...
+# para ver se compensa.
+# usar o tempo(soma da ordenação mais busca binária) ou até 30 segundos.
+# acredito que o contador não precisaremos usar... pelo que pude entender do enunciado.
+
 
     
