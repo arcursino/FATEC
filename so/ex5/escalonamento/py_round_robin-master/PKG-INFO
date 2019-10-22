@@ -1,0 +1,26 @@
+###########
+What's Round Robin?
+###########
+
+use python itertools realize Round Robin ....
+
+###############
+How to install?
+###############
+
+.. code-block:: sh
+
+    pip install py_round_robin
+
+################
+HOW USE py_round_robin?
+################
+
+
+.. code-block:: sh
+    rr_obj = Round_Robin(['a','b','c'])
+    for i in range(50):
+        print rr_obj.get_next()
+
+
+.. _the MIT license: https://github.com/rfyiamcool/py_round_robin
