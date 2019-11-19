@@ -16,7 +16,7 @@ class Processo(object):
     def setTcheg(tcheg):
         self.tcheg = tcheg
 
-n = int(input("Qual a quantidede de processos?"))
+n = int(input("Qual a quantidade de processos?"))
 lista = []
 
 c = input("Burst manual ou aleatório(M/A)?")
