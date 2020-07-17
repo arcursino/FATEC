@@ -1,0 +1,27 @@
+
+4 - [SO] Combinação de moedas
+Dado um valor de N centavos e um array com M valores diferentes de moedas (também em centavos),
+ escreva um código que calcula e imprime de quantas maneiras distintas as moedas podem ser combinadas
+  para se gerar um troco com valor N. Considere que você tem à disposição um número infinito de cada 
+  tipo de moeda, e que a ordem das moedas não interessa.
+
+ 
+
+Entrada
+ 
+A entrada contém um caso de teste. A primeira linha da entrada contém um número inteiro N, 
+indicando os centavos. A segunda linha da entrada contém um inteiro M, indicando o tamanho do array
+ de moedas, seguido de M linhas, cada uma contendo um valor diferente de moeda.
+ 
+Saída
+ 
+A saída deve conter apenas um número inteiro, que representa a quantidade de combinações diferentes
+ possíveis para gerar o troco com valor N, seguido de um caractere de final de linha ("\n").
+ 
+ 
+Explicação do primeiro caso do exemplo: há 4 soluções possíveis: 
+[1, 1, 1, 1,], [1, 1, 2], [2, 2] e [1, 3]
+
+Explicação do segundo caso do exemplo: há 5 soluções possíveis:
+[2, 2, 2, 2, 2], [2, 2, 3, 3], [2, 2, 6], [2, 3, 5], [5, 5]   
+
